@@ -1,0 +1,119 @@
+
+.trending-song {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    background-color: rgb(29, 29, 36);
+}
+
+.item1 {
+
+    padding: 30px 40px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-menu {
+    padding: 30px 100px ;
+    display: flex;
+    flex-direction: column;
+}
+.main-menu{
+    padding: 5px 100px;
+}
+/* CSS for the image */
+.trending-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button-list {
+    /* margin-top: 50px; */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trending-song .top-menu h2 {
+    font-size: 2.3rem;
+}
+
+.play-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.follow-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid grey;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.trending-song .main-menu table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.trending-song .main-menu th, .trending-song .main-menu td {
+    padding: 10px;
+    text-align: left;
+}
+
+.trending-song .main-menu th {
+    color: white;
+}
+
+.table-row:hover {
+    cursor: pointer;
+    border-radius: 50px !important;
+    border: 1px solid darkgrey;
+}
+
+@media (max-width: 768px) {
+    .trending-song {
+        flex-direction: column;
+    }
+
+    .item1 {
+        display: none; 
+    }
+
+    .item2, .top-menu {
+        padding: 20px;
+    }
+
+    .button-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .play-btn, .follow-btn {
+        width: 100%;
+    }
+    .main-menu{
+        padding: 0;
+    }
+}
+
+  
+

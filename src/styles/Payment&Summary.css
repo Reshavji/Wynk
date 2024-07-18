@@ -1,0 +1,186 @@
+
+body {
+  background-color: rgb(25, 25, 25);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.payment-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.summary-container {
+  background: linear-gradient(rgb(227, 46, 45) -20%, rgb(23, 22, 22) 100%);
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(20, 19, 19);
+  background-color: #fff;
+  color: white;
+  text-align: center;
+}
+.plan-details {
+  margin-top: 20px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-top: 30px;
+}
+
+.discounted-price {
+  color: #007bff;
+  font-size: 24px;
+  margin-top: 100px;
+
+
+}
+
+.savings,
+.to-pay {
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.final-price {
+  color: #007bff;
+  font-size: 24px;
+
+}
+
+.payment-options {
+  width: 100%;
+ margin-top: 40px !important;
+  max-width: 400px;
+  padding: 50px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 15px rgba(4, 4, 4, 0.7);
+  margin: 0 auto;
+}
+
+.upi-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.upi-option:hover {
+  transform: scale(1.2);
+}
+
+.card-form {
+ width:90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #007bff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-expiry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-expiry input {
+  margin-left: 10px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.card-expiry span {
+  margin: 0 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.save-card {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.auto-renew-label {
+  margin: 10px;
+}
+
+.pay-securely {
+  width: 70%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Larger screens (desktops) */
+@media screen and (min-width: 768px) {
+ 
+  .payment-summary {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .summary-container {
+    max-width: 350px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .discounted-price {
+    margin-top: 100px;
+  }
+
+  .payment-options {
+    max-width: 570px;
+  }
+
+  .upi-options {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .card-form {
+    max-width: 400px;
+  }
+}
+

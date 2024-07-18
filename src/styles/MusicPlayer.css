@@ -1,0 +1,144 @@
+.music-player-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: rgb(53, 50, 54);
+  color: #fff;
+  padding: 15px 5px 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-style: groove;
+  z-index: 1;
+  height: 5%;
+  cursor: pointer;
+}
+
+.image {
+  border-radius: 20%;
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 20px;
+}
+
+.song-title {
+  margin-left: -80px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist {
+  margin-left: -80px;
+  font-size: 13px;
+  color: rgb(134, 133, 133);
+}
+.red-like {
+  color: red;
+}
+.like-span {
+  position: absolute;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.control-button {
+  max-width: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.control-button-center {
+  background-color: rgb(227, 46, 45);
+  border: none;
+  padding: 5px;
+  margin: 0 30px 0 30px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.music-slider-container {
+  width: 50%;
+  display: flex;
+}
+
+.time-display {
+  display: flex;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.saved-icon {
+  margin-top: -20px;
+}
+
+.rc-slider-handle {
+  border: 2px solid rgb(227, 46, 45);
+  background-color: rgb(227, 46, 45);
+}
+
+.rc-slider-track {
+  background-color: rgb(227, 46, 45);
+}
+
+.rc-slider-rail {
+  background-color: #333;
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    margin-left: 5px;
+  }
+  .song-title,
+  .artist {
+ margin-left: -40px;
+    font-size: 15px;
+  }
+  .music-slider-container {
+    display: none;
+  }
+  .control-button {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 481px) and (max-width: 719px) {
+  .song-title,
+  .artist {
+ margin-left: -40px;
+    font-size: 15px;
+  }
+  .music-slider-container {
+    display: none;
+  }
+  .control-button {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 720px) and (max-width: 1024px){
+ 
+
+  .music-slider-container {
+    display: none !important;
+  }
+  .control-button {
+    display: block;
+  }
+}

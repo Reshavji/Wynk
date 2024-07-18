@@ -1,0 +1,131 @@
+
+.slider-container {
+  position: relative;
+margin: 0px !important;
+
+}
+
+.image-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0.75rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  background-color: rgb(29, 29, 36);
+}
+
+.images {
+  width: 50%; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.slider-icon {
+ width: 20px !important;
+ height: 20px !important;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.right {
+  right:0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.slider-icon-2-L,.slider-icon-2-R {
+  width: 20px !important;
+  height: 20px !important;
+   padding: 10px;
+   cursor: pointer;
+   color: white;
+   position: absolute;
+   transform: translateY(-50%);
+ }
+ .slider-icon-2-L{
+  margin-left: 80px;
+ }
+ .slider-icon-2-R{
+  margin-right: 70px;
+ }
+  .slider-container-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .image-container-2{
+   margin-left: 7rem;
+   margin-right: 7rem;
+    display: flex;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    padding: 1rem 0.75rem;
+    overflow-x: auto;
+    background-color: rgb(29, 29, 36);
+  }
+  .image-container-2::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .textTitle{
+      margin-left: 35px;
+  }
+    .image-container-2{
+      margin-left: 10px;
+      margin-right:20px;
+    }
+    .left{
+     margin-left: 8px;
+     z-index: 1;
+    }
+    .slider-icon-2-L{
+      margin-left: 0px;
+     }
+     .slider-icon-2-R{
+      margin-right: 0px;
+     }
+  }
+  @media screen and (min-width: 481px) and (max-width: 719px) {
+    .textTitle{
+      margin-left: 80px;
+  }
+    .image-container-2{
+      margin-left: 60px;
+      margin-right:80px;
+    }
+    
+    .slider-icon-2-L{
+      margin-left: 0px;
+     }
+     .slider-icon-2-R{
+      margin-right: 10px;
+     }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1024px){
+    .textTitle{
+      margin-left: 50px;
+  }
+    .image-container-2{
+      margin-left: 30px;
+      margin-right:60px;
+    }
+  }

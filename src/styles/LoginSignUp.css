@@ -1,0 +1,136 @@
+ .loginSetUp{
+  display: flex;
+  justify-content:center;
+text-align: center;
+margin-top: 50px;
+border-radius: 20px;
+margin-left: 400px;
+box-shadow: 0 0 10px black;
+width: 50%;
+height: 640px;
+}
+
+
+.login-signup-container {
+ padding: 20px;
+  color: white;
+  text-align: center;
+
+  border-radius: 10px;
+}
+
+.login-signup-container h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+   color: white;
+}
+
+.login-signup-container p {
+  font-size: 16px;
+  color:  white;
+  margin-bottom: 20px;
+} 
+.password-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 88%;
+}
+
+.password-toggle-button {
+  color: rgb(27, 26, 26) !important;
+  background: none !important;
+  position: absolute !important;
+ margin-left: 15rem !important;
+}
+
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+margin: 20px;
+
+}
+  
+
+.input-container input {
+  flex-grow: 1;
+  width: 80%;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.download-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.download-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.download-link img {
+  width: 160px;
+  height: 70px;
+  margin-top: 50px;
+  
+
+}
+.update-form{
+  display: flex;
+  justify-content:center;
+align-items: center;
+margin-top: 50px;
+border-radius: 20px;
+margin-left: 450px;
+box-shadow: 0 0 10px black;
+width: 40%;
+height: 400px;
+}
+
+@media (max-width: 768px) {
+  .loginSetUp, .update-form {
+    width: 80% !important;
+    margin-left: 50px;
+  
+  }
+.login-signup-container{
+  margin-left: 50px;
+}
+
+  .login-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .loginSetUp ,.update-form{
+    width: 50%;
+    margin-right: 30px;
+  }
+.login-signup-container{
+  margin-left: 50px;
+}
+.login-image {
+  display: none;
+}
+}
+
